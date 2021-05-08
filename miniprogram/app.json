@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/GD_index/GD_index"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/GD_getPhoto/GD_getPhoto",
+        "pages/GD_Report/GD_Report",
+        "pages/GD_shareGoods/GD_shareGoods"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/GD_plan/GD_plan"
+      ]
+    },
+    {
+      "root": "packageC",
+      "pages": [
+        "pages/GD_recommend/GD_recommend"
+      ]
+    },
+    {
+      "root": "packageD",
+      "pages": [
+        "pages/GD_share_emulsion/GD_share_emulsion",
+        "pages/GD_share_eye_cream/GD_share_eye_cream",
+        "pages/GD_share_essence/GD_share_essence",
+        "pages/GD_share_facial_foam/GD_share_facial_foam",
+        "pages/GD_share_lotion/GD_share_lotion"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Girls' Diary",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

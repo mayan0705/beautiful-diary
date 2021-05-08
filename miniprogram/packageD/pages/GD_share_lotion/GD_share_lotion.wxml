@@ -1,0 +1,47 @@
+<!--miniprogram/packageD/pages/GD_share_lotion/GD_share_lotion.wxml-->
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class="flex align-center justify-center bg-white padding">
+	<text class="text-xl text-pink">分享一款好用的爽肤水</text>
+</view>
+<van-field
+    label="名称"
+    placeholder="请输入爽肤水名称（不超过15字）"
+    input-align="left"
+    value="{{lotion_name}}"
+    bind:change="get_name"
+/>
+<van-field
+    label="价格"
+    placeholder="请输入爽肤水价格"
+    input-align="left"
+    value="{{lotion_price}}"
+    bind:change="get_price"
+/>
+<van-radio-group value="{{ skin_type }}" bind:change="onChange">
+  <van-cell-group title="请选择适合的肤质">
+    <van-cell title="油性皮肤" clickable data-name="油性皮肤" bind:click="onClick">
+      <van-radio slot="right-icon" name="油性皮肤" />
+    </van-cell>
+    <van-cell title="中性皮肤" clickable data-name="中性皮肤" bind:click="onClick">
+      <van-radio slot="right-icon" name="中性皮肤" />
+    </van-cell>
+    <van-cell title="干性皮肤" clickable data-name="干性皮肤" bind:click="onClick">
+      <van-radio slot="right-icon" name="干性皮肤" />
+    </van-cell>
+    <van-cell title="混合性皮肤" clickable data-name="混合性皮肤" bind:click="onClick">
+      <van-radio slot="right-icon" name="混合性皮肤" />
+    </van-cell>
+  </van-cell-group>
+</van-radio-group>
+<view class="padding bg-white">
+	<view bindtouchstart="containerTap">
+		<button class="cu-btn block line-pink margin-tb-sm lg" bindtap="uploadImage" bindtouchstart="containerTap">
+    <text class="cuIcon-roundadd"></text>
+    点击上传图片</button>
+	</view>
+	<view bindtouchstart="containerTap">
+		<button class="cu-btn block line-pink margin-tb-sm lg" bindtap="share" bindtouchstart="containerTap">
+    <text class="cuIcon-like"></text>
+    点击分享好物</button>
+	</view>
+</view>
